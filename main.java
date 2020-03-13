@@ -1,10 +1,13 @@
+import java.text.DecimalFormat;
+
 public class Circulo{
     public static void main(String[] args){
+        DecimalFormat metros = new DecimalFormat("##.##m");
         int raio = 5;
         double area;
         
         area = Math.PI*(raio*raio);
         
-        System.out.printf("A area de um circulo de %dm de raio é igual a %2fm",raio,area);
+        System.out.println("A area de um circulo de "+metros.format(raio)+" de raio é igual a "+metros.format(area));
     }
 }
